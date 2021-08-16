@@ -59,3 +59,7 @@ db.collection('cafes').onSnapshot((snapshot)=>{
         }
     })
 })
+
+function fiturKeren(){
+    console.log('fitur keren')
+}
