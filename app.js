@@ -20,11 +20,7 @@ function renderCafe(doc){
     cafeList.appendChild(li);
 
     // deleting data
-    cross.addEventListener('click',(e)=>{
-        e.stopPropagation();
-        let id  = e.target.parentElement.getAttribute('data-id');
-        db.collection('cafes').doc(id).delete()
-    })
+    
 
 }
 
@@ -41,15 +37,7 @@ function helloWorld(){
 // })
 
 // saving data
-form.addEventListener('submit',(e) => {
-    e.preventDefault();
-    db.collection('cafes').add({
-        name: form.name.value,
-        city: form.city.value
-    });
-    form.name.value= '';
-    form.city.value='';
-})
+
 
 // real-time listener
 db.collection('cafes').onSnapshot((snapshot)=>{
@@ -63,3 +51,7 @@ db.collection('cafes').onSnapshot((snapshot)=>{
         }
     })
 })
+
+function fiturBaruKeren(){
+    console.log('fitur baru keren')
+}
