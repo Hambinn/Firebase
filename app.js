@@ -28,6 +28,10 @@ function renderCafe(doc){
 
 }
 
+function helloWorld(){
+    console.log('Hellow World')
+}
+
     
 // getting data
 // db.collection('cafes').orderBy('city').get().then((snapshot) =>{
