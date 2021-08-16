@@ -63,3 +63,7 @@ db.collection('cafes').onSnapshot((snapshot)=>{
 function fiturKeren(){
     console.log('fitur keren')
 }
+
+function fiturAnjay(){
+    console.log('fitur anjay')
+}
